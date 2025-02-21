@@ -1,109 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kikteck Boutique Salesforce Consultancy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue & White Template</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset some default styles */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Header styles */
     header {
-      background-color: #0078d4;
-      color: white;
-      padding: 20px;
+      background: #0056b3; /* Blue background */
+      color: #fff;
+      padding: 20px 0;
+    }
+    .header-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #a6c8ff;
+    }
+    /* Hero section (optional) */
+    .hero {
+      background: url('your-hero-image.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    /* Main content area */
+    main {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px 0;
+    }
+    /* Footer styles */
+    footer {
+      background: #f1f1f1;
+      color: #333;
+      padding: 20px 0;
+    }
+    .footer-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
       text-align: center;
     }
-    section {
-      padding: 20px;
+    .footer-links {
+      margin-bottom: 10px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
+    .footer-links a {
+      color: #0056b3;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
     }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
+    .footer-links a:hover {
+      color: #003f7f;
     }
   </style>
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Welcome to Kikteck</h1>
-    <p>A Boutique Salesforce Consultancy</p>
+    <div class="header-container">
+      <div class="logo">Your Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Services</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Service</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Salesforce Implementation</td>
-          <td>End-to-end implementation of Salesforce solutions tailored to your needs.</td>
-        </tr>
-        <tr>
-          <td>Custom Development</td>
-          <td>Creating custom Salesforce apps, Lightning components, and integrations.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Training</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Course</th>
-          <th>Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Admin 101</td>
-          <td>Learn the basics of Salesforce administration and user management.</td>
-        </tr>
-        <tr>
-          <td>Advanced Development</td>
-          <td>In-depth training on Salesforce Apex, Lightning Web Components, and APIs.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Contact Us</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Contact</th>
-          <th>Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Email</td>
-          <td>contact@kikteck.com</td>
-        </tr>
-        <tr>
-          <td>Phone</td>
-          <td>+1 (800) 555-1234</td>
-        </tr>
-        <tr>
-          <td>Address</td>
-          <td>123 Consulting Lane, Techville, USA</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Optional Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Website</h1>
   </section>
+
+  <!-- Main Content Section -->
+  <main>
+    <h2>About Us</h2>
+    <p>
+      This is a sample content area. Customize this section with your text,
+      images, or other content to suit your needs.
+    </p>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+      </div>
+      <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
