@@ -49,11 +49,18 @@
       text-indent: -999em;
 
     }
+    
+    .fL {
+    float: left;
+    }
+    
 
     nav ul {
       display: flex;
       gap: 20px;
       list-style: none;
+      display:block;
+      margin-top:7px;
     }
 
     nav ul li a {
@@ -64,6 +71,8 @@
 
     nav ul li a:hover {
       color: #a6c8ff;
+      display: inline-block; 
+      padding: 0 10px; 
     }
 
     /* Hero section (optional) */
@@ -124,7 +133,7 @@
   <header>
     <div class="gradient-bar"></div>
     <div class="header-container">
-      <a href="/" class="logo">Kiks Tech</a>
+      <a href="/" class="logo fL">Kiks Tech</a>
       <nav>
         <ul>
           <li><a href="#">Salesforce Service</a></li>
