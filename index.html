@@ -19,6 +19,11 @@
       color: #333;
       line-height: 1.6;
     }
+    .clearfix:after{
+      content:''; 
+      clear:both; 
+      display:block; 
+    }
 
     /* Header styles */
     header {
@@ -32,7 +37,7 @@
       background: linear-gradient(90deg, #FAEF60 0%, #8FE3DE 17.19%, #8FE3DE 100%);
     }
 
-    .header-container {
+    .container {
       padding: 10px 0;
       margin: 0 15px;
       display: flex;
@@ -104,39 +109,29 @@
 
     /* Footer styles */
     footer {
-      background: #f1f1f1;
-      color: #333;
-      padding: 20px 0;
+    background: #0a122d;
+    padding: 90px 0;
     }
+	ul.foolterLinks{display:block;}
+	ul.foolterLinks > li { display: inline-block; padding: 0 10px; }
+	ul.foolterLinks > li > a { color: #d7d7d7; text-decoration: none; }
+	ul.socialLinks  > li { display: inline-block; padding: 0 2px; }
+	ul.socialLinks  > li > a {display:block; width:30px; height:30px; background:url(../images/social-icons.png) no-repeat; text-decoration: none; text-indent:-999em; }
+	ul.socialLinks  > li > a.fb{background-position: -75px 0;}
+	ul.socialLinks  > li > a.fb:hover{background-position: -75px -30px;}
+	ul.socialLinks > li > a.twitter { background-position: 0 0; }
+	ul.socialLinks > li > a.twitter:hover { background-position: 0 -30px; }
+	ul.socialLinks  > li > a.linkedin{background-position: -37px 0;}
+	ul.socialLinks  > li > a.linkedin:hover{background-position: -37px -30px;}
+	.footerLogo {display:block; width:213px; height:43px; background:url(../images/footer-logo.png) no-repeat; text-decoration: none; margin-left:40px; }
 
-    .footer-container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .footer-links {
-      margin-bottom: 10px;
-    }
-
-    .footer-links a {
-      color: #0056b3;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .footer-links a:hover {
-      color: #003f7f;
-    }
   </style>
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <div class="gradient-bar"></div>
-    <div class="header-container">
+    <div class="container">
       <a href="/" class="logo fL">Kiks Tech</a>
       <nav>
         <ul>
@@ -164,14 +159,20 @@
 
   <!-- Footer Section -->
   <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a> |
-        <a href="#">Terms of Service</a> |
-        <a href="#">Contact Us</a>
-      </div>
+    <div class="container clearfix">
+				<ul class="foolterLinks fL">
+					<li><a href="#salesforce_services">Salesforce Services</a></li>
+					<li><a href="#about_us">Why Us</a></li>
+					<li><a href="#contact_us">Contact Us</a></li>
+				</ul>
+				<div class="footerLogo fR"></div>
+				<ul class="socialLinks fR">
+					<!--<li><a href="#" class="twitter">Twitter</a></li> -->
+					<li><a href="http://www.linkedin.com/company/spark-e-gnite" target="_blank" class="linkedin">Linkedin</a></li>
+					<li><a href="https://www.facebook.com/Spark-e-gnite-107002937457994" target="_blank" class="fb">Facebook</a></li>
+				</ul>
       <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-    </div>
+			</div>
   </footer>
 </body>
 </html>
