@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Nunito Sans', sans-serif;
     }
 
     body {
@@ -55,6 +56,9 @@
     .fR{
       float:right;
     }
+    .ul, li {
+    list-style: none;
+    }
     
     nav ul {
       display: flex;
@@ -62,15 +66,17 @@
       list-style: none;
       display:block;
       margin-top:7px;
+      float: right;
     }
 
     nav ul li a {
       color: #050a16;
       text-decoration: none;
-      transition: color 0.3s;
+      /*transition: color 0.3s;*/
+      
     }
 
-    nav ul li a:hover {
+    nav ul li a{
       color: #a6c8ff;
       display: inline-block; 
       padding: 0 10px; 
@@ -90,7 +96,9 @@
     .hero h1 {
       font-size: 48px;
     }
-
+    .a {
+      outline: 0 none;
+    }
     /* Main content area */
     main {
       width: 90%;
